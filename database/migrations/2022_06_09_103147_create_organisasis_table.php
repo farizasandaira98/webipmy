@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('organisasis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_organisasi',100);
+            $table->string('alamat',100);
+            $table->string('email',50);
+            $table->string('nomor_telpon',15);
+            $table->string('logo');
             $table->timestamps();
         });
     }

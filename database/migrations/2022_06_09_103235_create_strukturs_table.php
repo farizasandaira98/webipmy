@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('strukturs', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_jabatan',30);
             $table->timestamps();
         });
     }
